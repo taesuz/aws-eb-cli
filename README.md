@@ -1,5 +1,7 @@
 # Docker AWS Elastic Beanstalk CLI
 
+![workflow](https://github.com/taesuz/docker-aws-eb-cli/actions/workflows/docker-build-and-push.yml/badge.svg)
+
 ## build 
 ```bash
 docker build -t aws-eb-cli .
