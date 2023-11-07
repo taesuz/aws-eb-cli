@@ -20,8 +20,7 @@ jobs:
         DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t taesuz/aws-eb-cli:latest .
-      working-directory: Dockerfile  # Set the path to your Dockerfile
+      run: docker build . --file Dockerfile --tag taesuz/aws-eb-cli:latest .
 
     - name: Push Docker image
       run: docker push taesuz/aws-eb-cli:latest
